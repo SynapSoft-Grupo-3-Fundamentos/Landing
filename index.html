@@ -7,6 +7,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./images/favicon.png" type="image/png" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        customBlue: '#5CAFF8',
+                        customSkyBlue: '#6DD8F0',
+                        customDarkBlue: '#0D3A5A',
+                        customYellow: '#E1D568',
+                        customVerySkyBlue: '#65C1C0',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -32,7 +48,10 @@
                         <a href="#subscriptions" role="menuitem">Subscriptions</a>
                     </li>
                 </ul>
-                <div class="flex flex-row gap-2"></div>
+                <div class="flex flex-row gap-2">
+                    <button class="bg-customDarkBlue text-white p-3 rounded-3xl font-light text-xl" aria-label="Sign in to Safe Child" onclick="window.location.href='https://synapsoft-17dc0.web.app/login'">Sign in</button>
+                    <button class="rounded-3xl border-2 border-customSkyBlue text-clifford p-3 text-xl" aria-label="Sign up for Safe Child" onclick="window.location.href='https://synapsoft-17dc0.web.app/login'">Sign up</button>
+            </div>
             </nav>
         </header>
         
@@ -133,6 +152,10 @@
                     <li class="flex flex-row justify-center items-center gap-3">
                         <span><img class="block h-5 w-5" alt="bullet point icon" src="./images/point.png" /></span>Create and manage your profile easily
                     </li>
+                    <li class="flex flex-row justify-center items-center gap-3">
+                            <span><img class="block h-6 w-6" alt="bullet point icon" src="./images/point.png" /></span>
+                            Post childcare requests and connect with caregivers
+                    </li>
                         <li class="flex flex-row justify-center items-center gap-3">
                             <span><img class="block h-6 w-6" alt="bullet point icon" src="./images/point.png" /></span>
                             Access essential tools to manage your bookings and coordinate with caregivers efficiently
@@ -160,6 +183,10 @@
                         <li class="flex flex-row justify-center items-center gap-2">
                             <span><img class="block h-5 w-5" alt="bullet point icon" src="./images/point.png" /></span>
                             24/7 booking management without restrictions
+                        </li>
+                        <li class="flex flex-row justify-center items-center gap-2">
+                            <span><img class="block h-5 w-5" alt="bullet point icon" src="./images/point.png" /></span>
+                            Total customization of the experience
                         </li>
                         <li class="flex flex-row justify-center items-center gap-2">
                             <span><img class="block h-5 w-5" alt="bullet point icon" src="./images/point.png" /></span>
@@ -203,6 +230,10 @@
 
                 <div class="col-span-12 sm:col-span-4 border-customBlue border-4 rounded-xl p-8 flex flex-col justify-center items-center gap-4"
                     aria-labelledby="review-2-heading">
+                    <div class="flex flex-col items-center justify-center">
+                        <img src="./images/Customer2.png" alt="Profile image of another satisfied customer"
+                            class="block lg:max-h-[300px] w-auto p-4 rounded-full" />
+                    </div>
                     <h3 id="review-2-heading"
                         class="text-2xl sm:text-3xl font-light text-clifford text-center bg-customVerySkyBlue-200 py-2 px-4 rounded-xl">
                         Effortless Management</h3>
@@ -214,6 +245,10 @@
 
                 <div class="col-span-12 sm:col-span-4 border-customBlue border-4 rounded-xl p-8 flex flex-col justify-center items-center gap-4"
                     aria-labelledby="review-3-heading">
+                    <div class="flex flex-col items-center justify-center">
+                        <img src="./images/Customer3.png" alt="Profile image of another satisfied customer"
+                            class="block lg:max-h-[300px] w-auto p-4 rounded-full" />
+                    </div>
                     <h3 id="review-3-heading"
                         class="text-2xl sm:text-3xl font-light text-clifford text-center bg-customVerySkyBlue-200 py-2 px-4 rounded-xl">
                         Time-Saving Solution</h3>
@@ -242,14 +277,20 @@
 
             <div class="flex flex-col gap-4">
                 <label class="text-xl font-light" htmlFor="name">Full Name</label>
+                <input class="border-none p-2 rounded-xl max-w-lg" type="text" id="name" name="name"
+                    aria-label="Enter your full name" placeholder="John Doe" required />
             </div>
 
             <div class="flex flex-col gap-4">
                 <label class="text-xl font-light" htmlFor="phone">Phone Number</label>
+                <input class="border-none p-2 rounded-xl max-w-lg" type="tel" id="phone" name="phone"
+                    aria-label="Enter your phone number" placeholder="+1234567890" required />
             </div>
 
             <div class="flex flex-col gap-4">
                 <label class="text-xl font-light" htmlFor="message">Your Message</label>
+                <textarea class="border-none p-2 rounded-xl max-w-lg" id="message" name="message"
+                    aria-label="Enter your message" placeholder="How can we assist you?" required></textarea>
             </div>
 
             <button type="submit" class="bg-orange-400 text-white p-2 rounded-3xl font-light text-xl">Send Message</button>
@@ -327,6 +368,11 @@
                         <a href="https://x.com/" aria-label="Follow  Pawfect Care in Twitter">
                             <div class="h-16 w-16 p-4 flex justify-center items-center">
                                 <img src="./images/twitter.png" alt="Logo de Twitter" />
+                            </div>
+                        </a>
+                        <a href="https://facebook.com/" aria-label="Follow a Pawfect Care in Facebook">
+                            <div class="h-16 w-16 p-4 flex justify-center items-center">
+                                <img src="./images/fb.png" alt="Logo de Facebook" />
                             </div>
                         </a>
                         <a href="https://www.instagram.com/#" aria-label="Follow a Pawfect Care in Instagram">
