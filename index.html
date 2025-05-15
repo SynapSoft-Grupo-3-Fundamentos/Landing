@@ -113,6 +113,16 @@
     <section id="subscriptions" class="container mx-auto flex flex-col gap-10 py-16"aria-labelledby="subscriptions-heading">
         <h2 id="subscriptions-heading" class="text-3xl sm:text-6xl text-center font-bold">Subscriptions</h2>
         <div class="flex flex-col sm:grid grid-cols-12 gap-4 sm:gap-6 lg:gap-6 max-w-[800px] mx-auto justify-center">
+            <div class="col-span-6 border-customBlue border-4 rounded-xl p-4 flex flex-col justify-center items-center gap-8 py-10">
+                <h3 class="text-2xl sm:text-3xl font-bold text-clifford text-center">Care Starter</h3>
+                <ul class="font-light text-[16px] sm:text-xl flex flex-col items-start gap-3" aria-label="Características del plan started por $00.00">
+                    <li class="flex flex-row justify-center items-center gap-3">
+                        <span><img class="block h-5 w-5" alt="bullet point icon" src="./images/point.png" /></span>Create and manage your profile easily
+                    </li>
+
+                    </ul>
+                    <button class="rounded-3xl border-customDarkBlue bg-customDarkBlue text-white p-3 text-2xl font-bold">S/.10.00</button>
+                </div>
                 <div
                         class="col-span-6 border-customBlue border-4 rounded-xl p-4 flex flex-col justify-center items-center gap-8 py-10">
                     <h3 class="text-2xl sm:text-3xl font-bold text-clifford text-center">Care Pro</h3>
@@ -185,7 +195,21 @@
     <h2 id="contact-heading" class="text-3xl sm:text-6xl text-center font-bold">Contact</h2>
 
     <div class="bg-customVerySkyBlue min-w-[400px] md:min-w-[500px] rounded-lg p-8">
+        <form class="flex flex-col gap-4" aria-labelledby="contact-form-heading">
 
+            <div class="flex flex-col items-center justify-center gap-4">
+                <div class="h-28 w-28 rounded-full bg-white p-4 flex justify-center items-center">
+                    <img src="./images/favicon.png" alt="RideFind Logo" />
+                </div>
+                <h3 id="contact-form-heading" class="text-xl sm:text-2xl font-bold text-black text-center">Get in Touch with Safe Child</h3>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <label class="text-xl font-light" htmlFor="message">Your Message</label>
+            </div>
+
+            <button type="submit" class="bg-orange-400 text-white p-2 rounded-3xl font-light text-xl">Send Message</button>
+        </form>
     </div>
 </section>
 
@@ -193,7 +217,22 @@
     <section id="video-links" class="container mx-auto py-8">
         <h3 class="text-2xl sm:text-4xl text-center font-bold mb-6">Watch Our Videos</h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-
+            <!-- Video 1 -->
+            <div class="flex flex-col items-center">
+                <h4 class="text-xl font-bold mb-2">About the Team</h4>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/57W8KR7rG9A" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+            <!-- Video 2 -->
+            <div class="flex flex-col items-center">
+                <h4 class="text-xl font-bold mb-2">About the Product</h4>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zwqX3E_WdSU" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
         </div>
     </section>
 
@@ -219,6 +258,13 @@
                                 <li><a href="mailto:support@gmail.com"
                                         aria-label="Enviar un correo al soporte de Pawfect Care">support@gmail.com</a>
                                 </li>
+                            </ul>
+                        </li>
+                        <li class="flex flex-col gap-4">
+                            <a class="font-bold text-xl" href="#" aria-label="Ir a la sección de Servicios">Services</a>
+                            <ul>
+                                <li><a href="#subscriptions" aria-label="Información sobre Membresía">Membership</a></li>
+                                <li><a href="/" aria-label="Iniciar sesión en Pawfect Care">Sign In</a></li>
                             </ul>
                         </li>
                         <li class="flex flex-col gap-4">
